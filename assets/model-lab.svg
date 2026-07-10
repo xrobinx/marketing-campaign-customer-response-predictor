@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Campaign Response Model Lab</title>
+  <desc id="desc">An ML evaluation dashboard comparing Logistic Regression, Decision Tree, Random Forest, and Gradient Boosting.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080A17"/><stop offset=".55" stop-color="#11102A"/><stop offset="1" stop-color="#181226"/></linearGradient>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#4DE3FF"/><stop offset=".58" stop-color="#8B5CF6"/><stop offset="1" stop-color="#F472B6"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#9A8EC6" stroke-opacity=".055"/></pattern>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>.m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.s{font-family:Inter,Segoe UI,Arial,sans-serif}.scan{animation:scan 5.5s ease-in-out infinite}.pulse{animation:pulse 2.5s ease-in-out infinite}@keyframes scan{0%,10%{transform:translateX(-520px);opacity:0}25%,75%{opacity:.75}90%,100%{transform:translateX(520px);opacity:0}}@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}</style>
+  </defs>
+  <rect width="1200" height="420" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="420" rx="24" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1198" height="418" rx="23" fill="none" stroke="#B0A4D5" stroke-opacity=".18"/>
+
+  <g transform="translate(48 40)"><circle cx="6" cy="6" r="6" fill="#FF5F57"/><circle cx="28" cy="6" r="6" fill="#FEBC2E"/><circle cx="50" cy="6" r="6" fill="#28C840"/><text x="76" y="11" class="m" font-size="12" fill="#847AA7" letter-spacing="2">PYTHON / MODEL LAB</text></g>
+  <text x="48" y="127" class="s" font-size="46" font-weight="800" fill="#F8F6FF">Campaign Response</text>
+  <text x="48" y="178" class="s" font-size="46" font-weight="800" fill="url(#grad)">Predictor</text>
+  <text x="48" y="226" class="s" font-size="18" fill="#BAB2D3">Imbalanced classification · four models · threshold tuning · explainability</text>
+
+  <g transform="translate(48 269)">
+    <rect width="145" height="73" rx="14" fill="#0E1425" stroke="#4DE3FF" stroke-opacity=".34"/>
+    <text x="18" y="25" class="m" font-size="9" fill="#7989A9">TEST CUSTOMERS</text><text x="18" y="56" class="s" font-size="25" font-weight="800" fill="#E9F8FF">444</text>
+    <rect x="158" width="145" height="73" rx="14" fill="#111126" stroke="#8B5CF6" stroke-opacity=".34"/>
+    <text x="176" y="25" class="m" font-size="9" fill="#887AA8">MODELS COMPARED</text><text x="176" y="56" class="s" font-size="25" font-weight="800" fill="#F2EBFF">4</text>
+    <rect x="316" width="183" height="73" rx="14" fill="#191022" stroke="#F472B6" stroke-opacity=".34"/>
+    <text x="334" y="25" class="m" font-size="9" fill="#A57599">BEST RESPONSE RECALL</text><text x="334" y="56" class="s" font-size="25" font-weight="800" fill="#FFDFF1">80.6%</text>
+  </g>
+
+  <g transform="translate(633 63)">
+    <rect width="515" height="314" rx="20" fill="#090B18" fill-opacity=".76" stroke="#B2A7D0" stroke-opacity=".16"/>
+    <text x="24" y="35" class="m" font-size="11" fill="#7D759A" letter-spacing="1.5">DEFAULT THRESHOLD / TEST SCORECARD</text>
+    <circle class="pulse" cx="477" cy="31" r="5" fill="#A879FF" filter="url(#glow)"/>
+    <text x="24" y="67" class="m" font-size="9" fill="#615B79">MODEL</text><text x="302" y="67" class="m" font-size="9" fill="#615B79">ACCURACY</text><text x="407" y="67" class="m" font-size="9" fill="#615B79">RECALL</text>
+
+    <g transform="translate(24 88)"><text y="14" class="m" font-size="11" fill="#D9D4E8">LOGISTIC REGRESSION</text><rect x="204" width="155" height="16" rx="8" fill="#20213A"/><rect x="204" width="130" height="16" rx="8" fill="#4DE3FF"/><text x="381" y="13" class="m" font-size="11" fill="#CDEFFF">84%</text><text x="455" y="13" text-anchor="end" class="m" font-size="11" fill="#CDEFFF">78%</text></g>
+    <g transform="translate(24 139)"><text y="14" class="m" font-size="11" fill="#D9D4E8">DECISION TREE</text><rect x="204" width="155" height="16" rx="8" fill="#20213A"/><rect x="204" width="113" height="16" rx="8" fill="#6775D9"/><text x="381" y="13" class="m" font-size="11" fill="#D8DBFF">73%</text><text x="455" y="13" text-anchor="end" class="m" font-size="11" fill="#D8DBFF">61%</text></g>
+    <g transform="translate(24 190)"><text y="14" class="m" font-size="11" fill="#D9D4E8">RANDOM FOREST</text><rect x="204" width="155" height="16" rx="8" fill="#20213A"/><rect x="204" width="135" height="16" rx="8" fill="#8B5CF6"/><text x="381" y="13" class="m" font-size="11" fill="#E4D9FF">87%</text><text x="455" y="13" text-anchor="end" class="m" font-size="11" fill="#E4D9FF">48%</text></g>
+    <g transform="translate(24 241)"><text y="14" class="m" font-size="11" fill="#D9D4E8">GRADIENT BOOSTING</text><rect x="204" width="155" height="16" rx="8" fill="#20213A"/><rect x="204" width="133" height="16" rx="8" fill="#D05CAD"/><text x="381" y="13" class="m" font-size="11" fill="#FFDDF2">86%</text><text x="455" y="13" text-anchor="end" class="m" font-size="11" fill="#FFDDF2">54%</text></g>
+    <text x="24" y="291" class="m" font-size="9" fill="#655E7D">RECALL = POSITIVE / RESPONDER CLASS AT DEFAULT THRESHOLD</text>
+    <rect class="scan" x="0" y="72" width="2" height="198" fill="#4DE3FF" opacity=".55" filter="url(#glow)"/>
+  </g>
+</svg>
