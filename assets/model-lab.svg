@@ -6,7 +6,6 @@
     <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#4DE3FF"/><stop offset=".58" stop-color="#8B5CF6"/><stop offset="1" stop-color="#F472B6"/></linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#9A8EC6" stroke-opacity=".055"/></pattern>
     <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <style>.m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.s{font-family:Inter,Segoe UI,Arial,sans-serif}.scan{animation:scan 5.5s ease-in-out infinite}.pulse{animation:pulse 2.5s ease-in-out infinite}@keyframes scan{0%,10%{transform:translateX(-520px);opacity:0}25%,75%{opacity:.75}90%,100%{transform:translateX(520px);opacity:0}}@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}</style>
   </defs>
   <rect width="1200" height="420" rx="24" fill="url(#bg)"/>
   <rect width="1200" height="420" rx="24" fill="url(#grid)"/>
